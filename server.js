@@ -31,6 +31,8 @@ res.json(songs);
 
 });
 
-app.listen(3000, () => {
-console.log("Musixa server running");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+console.log("Musixa server running on port " + PORT);
 });
