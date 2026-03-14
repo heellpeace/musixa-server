@@ -1,7 +1,10 @@
 const express = require("express");
+const cors = require("cors");
 const yts = require("yt-search");
 
 const app = express();
+
+app.use(cors());
 
 app.get("/", (req, res) => {
 res.send("Musixa API работает 🎧");
